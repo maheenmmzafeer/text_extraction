@@ -13,40 +13,6 @@
 *   **🎨 Clean Material 3 UI:** Beautiful turquoise-themed Material 3 interface with smooth animations and responsive feedback.
 *   **🔤 Language Selection:** Toggle between English and Urdu recognition modes with a simple language picker widget.
 
-## Getting Started
-
-### Prerequisites
-
-- Flutter SDK (3.0+)
-- Dart SDK (3.0+)
-- Android device or emulator (API 21+)
-- Google Gemini API Key (free tier available)
-
-### Installation
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/maheenmmzafeer/text_extraction.git
-   cd text_extraction
-   ```
-
-2. **Install dependencies:**
-   ```bash
-   flutter pub get
-   ```
-
-3. **Configure your API key:**
-   - Get a free Gemini API key from [Google AI Studio](https://aistudio.google.com/apikey)
-   - Create a `.env` file in the project root:
-     ```
-     GEMINI_API_KEY=your_actual_gemini_api_key_here
-     ```
-
-4. **Run the app:**
-   ```bash
-   flutter run
-   ```
-
 ## Why this architecture?
 
 This project was built to demonstrate a hybrid OCR approach:
@@ -75,23 +41,6 @@ To prevent accidental spamming of the Gemini Free Tier, the application enforces
 
 > **Note:** Urdu processing uses the Gemini API free tier. Overuse may trigger temporary quota suspension.
 
-## Project Structure
-
-```
-lib/
-├── main.dart                 # App entry point
-├── screens/
-│   └── home_screen.dart     # Main UI with camera & text display
-├── services/
-│   └── ocr_service.dart     # OCR logic (ML Kit + Gemini)
-└── widgets/
-    └── language_selector.dart # Language toggle widget
-
-assets/
-├── tessdata/                 # Tesseract data files
-└── dictionaries/             # Urdu word lists
-```
-
 ## Technologies Used
 
 - **Flutter** — Cross-platform mobile UI framework
@@ -112,16 +61,6 @@ GEMINI_API_KEY=your_key_here
 
 > ⚠️ **Security:** Never commit `.env` to version control. The repository's `.gitignore` excludes this file by default.
 
-## Build & Release
-
-### Building a Release APK
-
-```bash
-flutter build apk --release --no-tree-shake-icons
-```
-
-The resulting APK will be at: `build/app/outputs/flutter-apk/app-release.apk`
-
 ## Known Limitations
 
 - Urdu OCR requires an active internet connection and valid Gemini API key
@@ -135,12 +74,7 @@ The resulting APK will be at: `build/app/outputs/flutter-apk/app-release.apk`
 - [ ] Local Urdu model fallback when API quota is exceeded
 - [ ] Batch processing for multiple images
 - [ ] Text translation and dictionary lookup
-- [ ] Dark mode support
 - [ ] Export results to PDF/Word
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ## Disclaimer
 
