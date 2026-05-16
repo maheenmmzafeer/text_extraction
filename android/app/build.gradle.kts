@@ -40,6 +40,7 @@ android {
                 "proguard-rules.pro"
             )
             isMinifyEnabled = false
+            isShrinkResources = false
         }
     }
 }
