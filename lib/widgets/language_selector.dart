@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../services/ocr_service.dart';
+import 'app_action_button.dart';
 
 class LanguageSelector extends StatelessWidget {
   final OCRLanguage selectedLanguage;
@@ -23,46 +23,26 @@ class LanguageSelector extends StatelessWidget {
       ),
       child: Row(
         children: [
-          _buildLanguageChip(
-            label: "English",
-            language: OCRLanguage.english,
-            isSelected: selectedLanguage == OCRLanguage.english,
-          ),
-          _buildLanguageChip(
-            label: "اردو",
-            language: OCRLanguage.urdu,
-            isSelected: selectedLanguage == OCRLanguage.urdu,
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildLanguageChip({
-    required String label,
-    required OCRLanguage language,
-    required bool isSelected,
-  }) {
-    return Expanded(
-      child: GestureDetector(
-        onTap: () => onLanguageChanged(language),
-        child: Container(
-          padding: const EdgeInsets.symmetric(vertical: 12),
-          decoration: BoxDecoration(
-            color: isSelected ? const Color(0xFF00BFA5) : Colors.transparent,
-            borderRadius: BorderRadius.circular(10),
-          ),
-          child: Center(
-            child: Text(
-              label,
-              style: TextStyle(
-                color: isSelected ? Colors.white : Colors.blueGrey,
-                fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
-                fontSize: 16,
-              ),
+          Expanded(
+            child: AppActionButton(
+              label: 'English',
+              onPressed: () => onLanguageChanged(OCRLanguage.english),
+              selected: selectedLanguage == OCRLanguage.english,
+              compact: true,
+              fontSize: 13,
             ),
           ),
-        ),
+          const SizedBox(width: 4),
+          Expanded(
+            child: AppActionButton(
+              label: 'اردو',
+              onPressed: () => onLanguageChanged(OCRLanguage.urdu),
+              selected: selectedLanguage == OCRLanguage.urdu,
+              compact: true,
+              fontSize: 13,
+            ),
+          ),
+        ],
       ),
     );
   }

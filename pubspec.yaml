@@ -10,6 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.6
+  file_picker: ^11.0.2
   google_mlkit_text_recognition: ^0.14.0
   image_picker: ^1.1.2
   image_cropper: ^8.0.2
@@ -18,6 +19,7 @@ dependencies:
   flutter_dotenv: ^5.1.0
   flutter_animate: ^4.5.0
   flutter_native_splash: ^2.4.0
+  pdfx: ^2.9.2
 
 
 dev_dependencies:
