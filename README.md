@@ -70,7 +70,7 @@ GEMINI_API_KEY=your_key_here
 
 ## Future Improvements
 
-- [ ] Support for additional languages (Arabic, Persian, Hindi)
+- [ ] Support for additional languages
 - [ ] Local Urdu model fallback when API quota is exceeded
 - [ ] Batch processing for multiple images
 - [ ] Text translation and dictionary lookup
