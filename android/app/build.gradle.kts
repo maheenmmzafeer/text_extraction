@@ -39,7 +39,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            isMinifyEnabled = true
+            isMinifyEnabled = false
         }
     }
 }
