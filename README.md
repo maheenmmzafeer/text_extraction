@@ -6,14 +6,14 @@
 
 ## Features
 
-*   **⚡ Blazing Fast English OCR:** Utilizes **Google ML Kit** for 100% offline, on-device text recognition. Your English documents never leave your phone.
-*   **🌍 High-Accuracy Urdu OCR:** Uses **Gemini 2.5 Flash Lite** first for faster Urdu extraction, with **Gemini 2.5 Flash** as the fallback model when needed.
-*   **📸 Native Camera & Cropping:** Capture images directly from your device camera with an intuitive native crop editor to frame exactly what you need.
-*   **📄 PDF OCR Support:** Import PDFs, select a page range and extract text from the chosen pages instead of the full document by default.
-*   **🛡️ Abuse Prevention:** Built-in conservative rate limiting with a 4-second minimum cooldown and model-specific request caps to reduce quota issues.
-*   **🔁 Quota-Aware Fallback:** Urdu OCR falls back from **Gemini 2.5 Flash Lite** to **Gemini 2.5 Flash** when the primary model hits quota limits.
-*   **🎨 Clean Material 3 UI:** Beautiful turquoise-themed Material 3 interface with smooth animations, reusable action buttons and responsive feedback.
-*   **🔤 Language Selection:** Toggle between English and Urdu recognition modes with a simple language picker widget.
+*   ** Fast English OCR:** Utilizes **Google ML Kit** for 100% offline, on-device text recognition. Your English documents never leave your phone.
+*   ** High-Accuracy Urdu OCR:** Uses **Gemini 2.5 Flash Lite** first for faster Urdu extraction, with **Gemini 2.5 Flash** as the fallback model when needed.
+*   ** Native Camera & Cropping:** Capture images directly from your device camera with an intuitive native crop editor to frame exactly what you need.
+*   ** PDF OCR Support:** Import PDFs, select a page range and extract text from the chosen pages instead of the full document by default.
+*   ** Abuse Prevention:** Built-in conservative rate limiting with a 4-second minimum cooldown and model-specific request caps to reduce quota issues.
+*   ** Quota-Aware Fallback:** Urdu OCR falls back from **Gemini 2.5 Flash Lite** to **Gemini 2.5 Flash** when the primary model hits quota limits.
+*   ** Clean Material 3 UI:** Beautiful turquoise-themed Material 3 interface with smooth animations, reusable action buttons and responsive feedback.
+*   ** Language Selection:** Toggle between English and Urdu recognition modes with a simple language picker widget.
 
 ## Why this architecture?
 
